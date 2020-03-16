@@ -1,30 +1,34 @@
-def fooBar(n):
+def fizzbuzz(n):
 
-    for k in range (1,n+1):
+    for k in range (0,n+1):
+
+        nombre = ""
 
         if (k%3==0) and (k%5==0):
 
-            print("FizzBuzz")
+            nombre = "FizzBuzz"
 
         elif (k%3==0) and (k%5!=0):
 
-            print("Fizz")
+            nombre = "Fizz"
 
         elif (k%3!=0) and (k%5==0):
 
-            print("Buzz")
+            nombre = "Buzz"
 
         else:
 
-            print(k)
+            nombre = k
+
+        print (nombre)
 
     preguntaOtroNumero()
 
-def ejecucionFoobar():
+def ejecucionFizzbuzz():
 
     n = int(input ("Introduzca el número hasta el que quiera obtener el Fizzbuzz: "))
 
-    fooBar(n)
+    fizzbuzz(n)
 
 def preguntaOtroNumero():
 
@@ -32,7 +36,7 @@ def preguntaOtroNumero():
 
     if q == "Sí":
 
-        ejecucionFoobar()
+        ejecucionFizzbuzz()
 
     elif q == "No":
 
@@ -44,4 +48,4 @@ def preguntaOtroNumero():
         
         preguntaOtroNumero()
 
-ejecucionFoobar()
+ejecucionFizzbuzz()
