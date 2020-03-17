@@ -4,15 +4,15 @@ def fizzbuzz(n):
 
         nombre = ""
 
-        if (k%3==0) and (k%5==0):
+        if (k%15==0):
 
             nombre = "FizzBuzz"
 
-        elif (k%3==0) and (k%5!=0):
+        elif (k%3==0):
 
             nombre = "Fizz"
 
-        elif (k%3!=0) and (k%5==0):
+        elif (k%5==0):
 
             nombre = "Buzz"
 
